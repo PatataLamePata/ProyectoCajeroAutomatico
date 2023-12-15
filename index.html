@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section id="Ingreso">
+
+            <div id="imagen">
+                <img src="assets/IMG/fotito.jpg" id="fotito"/>
+            </div>
+            <div id="contenedorMenor">
+                <div id="titulo">Su banco de confianza</div>
+                <form id="loginForm">
+                    <div class="logins">
+                        <label id="nombre" for="username">Nombre de Usuario:</label>
+                        <input type="text" id="username" name="username" required><br>
+                    </div>
+                    <div class="logins">
+                        <label id="contra" for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required><br>
+                    </div>
+                    <input id="listo" type="submit" value="Iniciar sesión">
+                </form>
+            </div>
+            <div id="mensaje"></div>
+    </section>
+    <section id="Eleccion">
+            <div id="imagen2"></div>
+            <div id="acciones">
+                <form id="quizForm">
+                    <div class="pregunta">
+                        <div id="preguntita">¿Que acción desea hacer?</div>
+                        <div id="inputs">
+                            <label class="radio">
+                                <input class="check" type="radio" name="q1" value="Retiro">
+                                <span class="radio-circle"></span>
+                                <span class="radio-label">Retiro</span>
+                            </label><br>
+                            <label class="radio">
+                                <input class="check" type="radio" name="q1" value="Ingreso">
+                                <span class="radio-circle"></span>
+                                <span class="radio-label">Ingreso de dinero</span>
+                            </label><br>
+                            <label class="radio">
+                                <input class="check" type="radio" name="q1" value="VerSaldo">
+                                <span class="radio-circle"></span>
+                                <span class="radio-label">Ver saldo</span>
+                            </label><br>
+                        </div>
+                    </div>
+                    
+                    <input id="listito" type="submit" value="Enviar respuestas">
+                </form>
+            </div>
+    </section>
+    <section id="retiro">
+        <div id="titulo">Su banco de confianza</div>
+        <div class="ingre-ret">
+            <label id="textRetiro" for="username">Cantidad a retirar</label>
+            <input type="number" id="cantRetiro" name="cantiRetiro" required><br>
+            <input type="submit" id="continuar1" value="Continuar">
+        </div>
+    </section>
+    <section id="ingreso">
+        <div id="titulo">Su banco de confianza</div>
+        <div class="ingre-ret">
+            <label id="textIngreso" for="username">Cantidad a ingresar</label>
+            <input type="number" id="cantIngreso" name="cantIngreso" required><br>
+            <input type="submit" id="continuar2" value="Continuar">
+        </div>
+    </section>
+    <section id="verSaldo">
+        <div id="titulo">Su banco de confianza</div>
+        <div id="verSaldito"></div>
+    </section>
+
+    <script src="./JS/index.js"></script>
+
+</body>
